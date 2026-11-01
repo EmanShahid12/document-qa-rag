@@ -49,7 +49,14 @@ First measured run (before the fixes listed below):
 | Unanswerable questions correctly refused | 7/8 |
 
 This run exposed a bug: the model replied `NOT FOUND.` (with a full stop) and the old normalisation did not recognise it, so the answer was not marked `not_found`. It also showed 2 answers without a numeric citation. Both were fixed in `rag.py` (see Changelog). The raw results are saved in `results/` (`eval_results_v2_before.json` and `eval_results_v2_after.json`).
+After the fixes (answerable questions only, 22 total):
 
+| Status | Before | After |
+|---|---|---|
+| grounded | 19 | 22 |
+| low_confidence | 3 | 0 |
+
+`grounded` means the confidence gate passed; it does not by itself prove the answer is correct. Answers were checked manually (see Limitations).
 ## Limitations
 
 - The eval set is small and hand-written; results are indicative, not a benchmark.
