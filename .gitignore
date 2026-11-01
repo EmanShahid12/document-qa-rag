@@ -1,0 +1,17 @@
+.venv/
+venv/
+__pycache__/
+*.pyc
+faiss_index/
+index.faiss
+index.pkl
+agent_memory.sqlite3
+data/*.pdf
+/eval_results*.json
+/evaluation_report.json
+/answers.txt
+/eval_output.txt
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

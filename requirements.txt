@@ -1,0 +1,17 @@
+# Versions are intentionally unpinned here. After your project runs correctly, run:
+#   pip freeze > requirements-lock.txt
+# and commit that file so others can reproduce your exact environment.
+langchain-core
+langchain-community
+langchain-huggingface
+langchain-ollama
+langchain-text-splitters
+langgraph
+langgraph-checkpoint-sqlite
+faiss-cpu
+sentence-transformers
+rank-bm25
+pypdf
+pydantic
+duckduckgo-search
+streamlit

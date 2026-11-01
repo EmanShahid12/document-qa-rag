@@ -1,0 +1,329 @@
+[
+  {
+    "question": "How many chapters does the book consist of?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      3
+    ],
+    "expected_keywords": [
+      "six"
+    ],
+    "topic": "book structure"
+  },
+  {
+    "question": "What are the three kinds of pre-training discussed: unsupervised, supervised and what else?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      11,
+      12,
+      13
+    ],
+    "expected_keywords": [
+      "self-supervised"
+    ],
+    "topic": "pre-training basics"
+  },
+  {
+    "question": "What is zero-shot learning in the context of large language models?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      15,
+      64,
+      108
+    ],
+    "expected_keywords": [
+      "instruction"
+    ],
+    "topic": "pre-training basics"
+  },
+  {
+    "question": "What is few-shot learning and what are demonstrations?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      15
+    ],
+    "expected_keywords": [
+      "demonstrations"
+    ],
+    "topic": "pre-training basics"
+  },
+  {
+    "question": "When adapting a pre-trained encoder to a classification task, what does it mean to freeze the encoder parameters?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      14
+    ],
+    "expected_keywords": [
+      "classifier"
+    ],
+    "topic": "adaptation"
+  },
+  {
+    "question": "What is next sentence prediction (NSP)?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      22
+    ],
+    "expected_keywords": [
+      "consecutive",
+      "sentence"
+    ],
+    "topic": "encoder pre-training"
+  },
+  {
+    "question": "What are the generator and discriminator in ELECTRA?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      22,
+      23
+    ],
+    "expected_keywords": [
+      "generator",
+      "discriminator"
+    ],
+    "topic": "encoder pre-training"
+  },
+  {
+    "question": "What is the drawback of masked language modeling related to the [MASK] token?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      19
+    ],
+    "expected_keywords": [
+      "training",
+      "inference"
+    ],
+    "topic": "encoder pre-training"
+  },
+  {
+    "question": "What is permuted language modeling?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      19,
+      20
+    ],
+    "expected_keywords": [
+      "order"
+    ],
+    "topic": "encoder pre-training"
+  },
+  {
+    "question": "How does the T5 model frame different NLP tasks?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      24
+    ],
+    "expected_keywords": [
+      "text-to-text"
+    ],
+    "topic": "encoder-decoder"
+  },
+  {
+    "question": "What are the hidden size, number of layers and total parameters of BERT-base?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      35
+    ],
+    "expected_keywords": [
+      "768",
+      "110"
+    ],
+    "topic": "BERT"
+  },
+  {
+    "question": "How many parameters does BERT-large have?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      35
+    ],
+    "expected_keywords": [
+      "340"
+    ],
+    "topic": "BERT"
+  },
+  {
+    "question": "What two improvements does RoBERTa introduce over BERT?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      35,
+      36
+    ],
+    "expected_keywords": [
+      "training data",
+      "nsp"
+    ],
+    "topic": "BERT"
+  },
+  {
+    "question": "How many parameters does GPT-3 have?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      50
+    ],
+    "expected_keywords": [
+      "175"
+    ],
+    "topic": "LLM scale"
+  },
+  {
+    "question": "What is the KV cache and why does it become a problem for long sequences?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      78,
+      79,
+      80
+    ],
+    "expected_keywords": [
+      "memory"
+    ],
+    "topic": "long context"
+  },
+  {
+    "question": "What are the key steps of RLHF?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      57,
+      58
+    ],
+    "expected_keywords": [
+      "reward model",
+      "policy"
+    ],
+    "topic": "alignment"
+  },
+  {
+    "question": "What is direct preference optimization (DPO) and how does it differ from RLHF?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      202
+    ],
+    "expected_keywords": [
+      "reward model",
+      "preference"
+    ],
+    "topic": "alignment"
+  },
+  {
+    "question": "What is chain-of-thought prompting?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      62,
+      123,
+      244,
+      259
+    ],
+    "expected_keywords": [
+      "step"
+    ],
+    "topic": "prompting"
+  },
+  {
+    "question": "What is the difference between few-shot CoT and zero-shot CoT?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      124
+    ],
+    "expected_keywords": [
+      "example"
+    ],
+    "topic": "prompting"
+  },
+  {
+    "question": "What is beam search and what is the beam width?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      223
+    ],
+    "expected_keywords": [
+      "beam width"
+    ],
+    "topic": "inference"
+  },
+  {
+    "question": "What do top-k and top-p sampling do?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      225,
+      226
+    ],
+    "expected_keywords": [
+      "probab"
+    ],
+    "topic": "inference"
+  },
+  {
+    "question": "What is speculative decoding and what is a draft model?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_pages": [
+      227,
+      228,
+      229
+    ],
+    "expected_keywords": [
+      "draft model"
+    ],
+    "topic": "inference"
+  },
+  {
+    "question": "What is the salary of the CEO mentioned in data.pdf?",
+    "answerable": false,
+    "kind": "out-of-domain"
+  },
+  {
+    "question": "Who won the FIFA World Cup in 2030?",
+    "answerable": false,
+    "kind": "out-of-domain"
+  },
+  {
+    "question": "What is my personal phone number?",
+    "answerable": false,
+    "kind": "out-of-domain"
+  },
+  {
+    "question": "What is Byte Pair Encoding (BPE) and how does it build a vocabulary?",
+    "answerable": false,
+    "kind": "in-domain, absent from book"
+  },
+  {
+    "question": "How does FlashAttention reduce memory usage on GPUs?",
+    "answerable": false,
+    "kind": "in-domain, absent from book"
+  },
+  {
+    "question": "How many parameters does GPT-4 have?",
+    "answerable": false,
+    "kind": "in-domain, absent from book"
+  },
+  {
+    "question": "What is the context window size of Gemini?",
+    "answerable": false,
+    "kind": "in-domain, absent from book"
+  },
+  {
+    "question": "Which Nvidia GPU (A100 or H100) did the authors use to train their models?",
+    "answerable": false,
+    "kind": "in-domain, absent from book"
+  }
+]

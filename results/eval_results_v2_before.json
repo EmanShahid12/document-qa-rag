@@ -1,0 +1,592 @@
+[
+  {
+    "question": "How many chapters does the book consist of?",
+    "answerable": true,
+    "kind": "book structure",
+    "status": "grounded",
+    "confidence": 0.9369,
+    "retrieved_pages": [
+      3,
+      3,
+      1,
+      213
+    ],
+    "answer": "According to the context passage [1] (data.pdf, page 3), the book consists of six chapters.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What are the three kinds of pre-training discussed: unsupervised, supervised and what else?",
+    "answerable": true,
+    "kind": "pre-training basics",
+    "status": "low_confidence",
+    "confidence": 0.9941,
+    "retrieved_pages": [
+      13,
+      11,
+      11,
+      10
+    ],
+    "answer": "According to the context passages, the three kinds of pre-training discussed are:\n\n1. Unsupervised pre-training\n2. Supervised pre-training\n3. Self-supervised pre-training\n\nThese three types of pre-training are mentioned in the context passages as different approaches to pre-training a neural network before fine-tuning it for downstream tasks.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": false,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is zero-shot learning in the context of large language models?",
+    "answerable": true,
+    "kind": "pre-training basics",
+    "status": "grounded",
+    "confidence": 0.9997,
+    "retrieved_pages": [
+      108,
+      300,
+      299,
+      64
+    ],
+    "answer": "According to the context, zero-shot learning in the context of large language models refers to a method where LLMs can solve new problems without any additional training or fine-tuning, using only simple instructions without any demonstrations [4] (data.pdf, page 64). This ability emerges as LLMs are pre-trained and/or fine-tuned, and is a form of zero-shot learning [4] (data.pdf, page 64).",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is few-shot learning and what are demonstrations?",
+    "answerable": true,
+    "kind": "pre-training basics",
+    "status": "grounded",
+    "confidence": 0.9987,
+    "retrieved_pages": [
+      109,
+      64,
+      108,
+      15
+    ],
+    "answer": "Few-shot learning is a method where a large language model (LLM) is provided with a pattern that maps some inputs to corresponding outputs, and the LLM attempts to follow this pattern in making predictions, provided that the prompt includes a sufficient number of demonstrations [1]. Demonstrations are samples that demonstrate how an input corresponds to an output, and they are used to teach the LLM how to perform a task [4].",
+    "page_hit": true,
+    "top1_page_hit": false,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "When adapting a pre-trained encoder to a classification task, what does it mean to freeze the encoder parameters?",
+    "answerable": true,
+    "kind": "adaptation",
+    "status": "grounded",
+    "confidence": 0.9964,
+    "retrieved_pages": [
+      14,
+      13,
+      12,
+      17
+    ],
+    "answer": "To freeze the encoder parameters means to maintain their pre-trained state and not optimize them during the fine-tuning process. This allows the classifier to be efficiently adapted to work effectively with the pre-trained encoder, while the classifier parameters are optimized [1].",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is next sentence prediction (NSP)?",
+    "answerable": true,
+    "kind": "encoder pre-training",
+    "status": "grounded",
+    "confidence": 0.9991,
+    "retrieved_pages": [
+      22,
+      22,
+      32,
+      31
+    ],
+    "answer": "Next sentence prediction (NSP) is a self-supervised pre-training task used to train BERT and other sequence encoding models. It is based on the assumption that a good text encoder should capture the relationship between two consecutive sentences. To model this relationship, NSP uses the encoder output of two consecutive sentences, Sent A and Sent B, to determine whether Sent B is the next sentence following Sent A. The task involves generating training samples by extracting sentence pairs from a text corpus, where a positive sample is created by selecting two actual consecutive sentences, and a negative sample is formed by pairing a sentence with a randomly chosen sentence from the corpus. The model is trained as a classifier, where the output vector of the encoder for the first token (CLS) is viewed as the sequence representation, and a classifier is built on top of this representation. [1]",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What are the generator and discriminator in ELECTRA?",
+    "answerable": true,
+    "kind": "encoder pre-training",
+    "status": "grounded",
+    "confidence": 0.9996,
+    "retrieved_pages": [
+      23,
+      293,
+      22,
+      23
+    ],
+    "answer": "According to [1] (data.pdf, page 23), in ELECTRA, the generator is optimized as a masked language model with maximum likelihood estimation, and the discriminator is optimized as a classifier using a classification-based loss.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is the drawback of masked language modeling related to the [MASK] token?",
+    "answerable": true,
+    "kind": "encoder pre-training",
+    "status": "grounded",
+    "confidence": 0.9996,
+    "retrieved_pages": [
+      19,
+      19,
+      27,
+      18
+    ],
+    "answer": "According to passage [1], the drawback of masked language modeling related to the [MASK] token is that it \"overlooks the dependencies between masked tokens\" and that the prediction of one masked token is made independently of other masked tokens, even though they are interdependent in the context of the sentence.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": false,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is permuted language modeling?",
+    "answerable": true,
+    "kind": "encoder pre-training",
+    "status": "grounded",
+    "confidence": 0.9993,
+    "retrieved_pages": [
+      19,
+      29,
+      20,
+      21
+    ],
+    "answer": "According to the context, permuted language modeling is an approach that allows for predictions in any order, unlike causal modeling where predictions follow a natural sequence. It involves determining an order for token predictions and then training the model in a standard language modeling manner. The actual order of tokens in the text remains unchanged, and only the order in which we predict these tokens differs from standard language modeling. [1]\n\nIn permuted language modeling, the input sequence is kept fixed, but the factorization (prediction) order is reordered. Each prediction is based on some context tokens that are randomly selected. This approach shares similarities with masked language modeling but removes the fixed left-to-right restriction. [2]\n\nThe implementation of permuted language models is relatively easy for Transformers, as self-attention is permutation-invariant and positional information is encoded separately using positional embeddings. Permutation can be done by setting appropriate masks for self-attention. [3]",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "How does the T5 model frame different NLP tasks?",
+    "answerable": true,
+    "kind": "encoder-decoder",
+    "status": "low_confidence",
+    "confidence": 0.9755,
+    "retrieved_pages": [
+      24,
+      14,
+      104,
+      14
+    ],
+    "answer": "According to Raffel et al. [2020], the T5 model frames different NLP tasks as the same text-to-text task, where each sample follows the format \"Source Text→Target Text\". This format separates the source text, which consists of a task description or instruction, from the target text, which is the response to the input task. For example, a task of translating from Chinese to English can be expressed as \"[CLS]Translate from Chinese to English: 你好！→ ⟨s⟩Hello!\", where [CLS] and ⟨s⟩ are the start symbols on the source and target sides, respectively.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What are the hidden size, number of layers and total parameters of BERT-base?",
+    "answerable": true,
+    "kind": "BERT",
+    "status": "grounded",
+    "confidence": 0.9959,
+    "retrieved_pages": [
+      35,
+      34,
+      35,
+      36
+    ],
+    "answer": "According to the context passages, the hidden size, number of layers, and total parameters of BERT-base are:\n\n* Hidden size (d): 768\n* Number of layers (L): 12\n* Total number of parameters: 110M\n\nThese values are mentioned in passage [1] (data.pdf, page 35) as part of the BERT-base configuration.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "How many parameters does BERT-large have?",
+    "answerable": true,
+    "kind": "BERT",
+    "status": "grounded",
+    "confidence": 0.9994,
+    "retrieved_pages": [
+      35,
+      36,
+      36,
+      36
+    ],
+    "answer": "According to the context, BERT-large has a total of 340M parameters. [1]",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What two improvements does RoBERTa introduce over BERT?",
+    "answerable": true,
+    "kind": "BERT",
+    "status": "grounded",
+    "confidence": 0.9996,
+    "retrieved_pages": [
+      35,
+      36,
+      35,
+      31
+    ],
+    "answer": "According to the context, RoBERTa introduces two major improvements over BERT:\n\n1. Using more training data and more compute can improve BERT models without the need to change the model architecture [1].\n2. Removing the NSP loss does not degrade performance on downstream tasks if the training is scaled up [2].\n\nThese findings suggest that RoBERTa is an example of a general direction of pre-training, where scaling up pre-training on simple pre-training tasks can lead to improvements [2].",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "How many parameters does GPT-3 have?",
+    "answerable": true,
+    "kind": "LLM scale",
+    "status": "grounded",
+    "confidence": 0.9404,
+    "retrieved_pages": [
+      50,
+      68,
+      175,
+      65
+    ],
+    "answer": "According to passage [1], GPT-3 has 175B parameters.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is the KV cache and why does it become a problem for long sequences?",
+    "answerable": true,
+    "kind": "long context",
+    "status": "grounded",
+    "confidence": 0.9959,
+    "retrieved_pages": [
+      239,
+      84,
+      78,
+      238
+    ],
+    "answer": "The KV cache is a memory allocation technique used in deep learning models, particularly in attention mechanisms. According to [1], the KV cache enables parallelization of the caching process, allowing for the efficient processing of long sequences by dividing the key and value vectors into smaller segments.\n\nHowever, as the sequence length increases, the KV cache becomes a problem due to its linear growth in memory footprint with sequence length. This can become prohibitive for extremely long contexts, making standard LLM deployment impractical [3]. The KV cache footprint grows linearly with sequence length, but the memory requirement becomes prohibitive, leading to the development of more efficient variants and alternatives.\n\nIn particular, for long sequences, the KV cache can lead to information loss due to its fixed-size global memory, which can absorb excessive attention scores and stabilize model performance [2]. To address this issue, some approaches, such as PagedAttention, divide the KV cache into smaller memory pages, enabling flexible memory management and supporting dynamic sequence growth without requiring expensive reallocation or copying of large contiguous memory regions [4].",
+    "page_hit": true,
+    "top1_page_hit": false,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What are the key steps of RLHF?",
+    "answerable": true,
+    "kind": "alignment",
+    "status": "grounded",
+    "confidence": 0.9998,
+    "retrieved_pages": [
+      58,
+      57,
+      141,
+      56
+    ],
+    "answer": "According to Figure 2.2 in [2] (data.pdf, page 57), the key steps of RLHF (Reinforcement Learning from Human Feedback) are:\n\n1. a) training an initial LLM (i.e., policy) using pre-training and supervised fine-tuning\n2. b) collecting human preference data by ranking the outputs of the LLM\n3. c) training a reward model using the ranking results\n4. d) RL fine-tuning of the policy based on the reward model.\n\nThese steps are outlined in Figure 2.2, which shows an overview of RLHF with double line arrows indicating training or fine-tuning.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is direct preference optimization (DPO) and how does it differ from RLHF?",
+    "answerable": true,
+    "kind": "alignment",
+    "status": "grounded",
+    "confidence": 0.9951,
+    "retrieved_pages": [
+      202,
+      203,
+      202,
+      205
+    ],
+    "answer": "Direct preference optimization (DPO) is a method for aligning language models with human preferences, which simplifies the training framework by eliminating the need to explicitly model rewards. Unlike reinforcement learning-based methods (RLHF), DPO directly optimizes the policy based on user preferences, rather than training a separate reward model. This approach allows for human preference alignment in a supervised learning-like fashion, as shown in Figure 4.10 [1].\n\nIn DPO, the policy is trained on preference-based feedback, which is directly optimized without the need for a separate reward model. This differs from RLHF, where a reward model is first trained on human preference data, and then used to train the policy and value function [2]. The DPO objective is straightforward and sample-efficient, making it a popular method for human preference alignment, especially when developing and applying reward models via reinforcement learning is challenging [4].",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is chain-of-thought prompting?",
+    "answerable": true,
+    "kind": "prompting",
+    "status": "grounded",
+    "confidence": 0.9997,
+    "retrieved_pages": [
+      244,
+      259,
+      246,
+      62
+    ],
+    "answer": "Chain-of-thought prompting is a method used to improve the reasoning performance of Large Language Models (LLMs) by encouraging the model to produce intermediate reasoning steps before producing the final answer. [1] [2]",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is the difference between few-shot CoT and zero-shot CoT?",
+    "answerable": true,
+    "kind": "prompting",
+    "status": "grounded",
+    "confidence": 0.9988,
+    "retrieved_pages": [
+      124,
+      124,
+      64,
+      63
+    ],
+    "answer": "According to the context passages, the difference between few-shot CoT and zero-shot CoT is as follows:\n\nFew-shot CoT requires providing one or more examples of CoT reasoning, whereas zero-shot CoT does not require such examples. Instead, it prompts LLMs to reason step-by-step by incorporating specific instructions into prompts, as shown in the example prompt: \"Q: Please calculate the average of the numbers 2, 4, and 9. A: Let’s think step-by-step.\" [1]\n\nIn contrast, zero-shot CoT does not require examples and instead uses trigger phrases to encourage LLMs to think step-by-step, without explicitly providing intermediate reasoning examples in the prompt. [Kojima et al., 2022] [1]\n\nThis difference highlights the key distinction between few-shot CoT, which relies on examples, and zero-shot CoT, which relies on instructions and trigger phrases to facilitate step-by-step reasoning.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is beam search and what is the beam width?",
+    "answerable": true,
+    "kind": "inference",
+    "status": "grounded",
+    "confidence": 0.9967,
+    "retrieved_pages": [
+      223,
+      223,
+      223,
+      251
+    ],
+    "answer": "Beam search is a natural extension of greedy search in sequence generation tasks. Instead of retaining only the single most probable sequence at each step, beam search maintains a fixed number of the best candidate sequences, known as the \"beam width\" K [2]. The beam width K allows us to balance search efficiency and accuracy. A relatively small beam width, such as K= 2 to K= 5, is usually sufficient to achieve high-quality generation [1].\n\nIn beam search, all possible continuations are evaluated at each step by computing the full sequence log-probabilities for the set Yi−1×V. The top K sequences with the highest accumulated probabilities are then selected to form Yi [3]. The beam width K determines the number of top candidates to select at each step, and adjusting K allows us to balance search efficiency and accuracy [3].",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What do top-k and top-p sampling do?",
+    "answerable": true,
+    "kind": "inference",
+    "status": "grounded",
+    "confidence": 0.993,
+    "retrieved_pages": [
+      263,
+      262,
+      225,
+      224
+    ],
+    "answer": "According to the context passages, top-k and top-p sampling are two stochastic decoding strategies used in the LLM to sample a set of diverse output sequences (i.e., candidate reasoning paths).\n\nTop-k sampling restricts the sampling pool to only the k most likely next tokens, redistributing the probability mass among them [1]. This method selects the smallest set of top-ranked tokens whose cumulative probability exceeds a threshold p.\n\nTop-p sampling, on the other hand, uses a dynamic truncation strategy. It selects the smallest set of top-ranked tokens whose cumulative probability exceeds a threshold p, but unlike top-k sampling, it does not restrict the sampling pool to a fixed size [1]. Instead, it selects the next token from the smallest set of tokens that together have a cumulative probability higher than a predefined threshold p [3].\n\nIn summary, both top-k and top-p sampling aim to select the most likely next tokens, but they differ in their approach to achieve this goal. Top-k sampling restricts the sampling pool to a fixed size, while top-p sampling uses a dynamic truncation strategy to select the next token from a smaller set of tokens with a cumulative probability higher than a threshold.",
+    "page_hit": true,
+    "top1_page_hit": false,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": true,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is speculative decoding and what is a draft model?",
+    "answerable": true,
+    "kind": "inference",
+    "status": "low_confidence",
+    "confidence": 0.9992,
+    "retrieved_pages": [
+      228,
+      229,
+      228,
+      228
+    ],
+    "answer": "Speculative decoding is a process used in language model inference, where a draft model is employed to autoregressively predict a sequence of likely future tokens given a prefix. The draft model is a small language model, denoted by Prq(yi|x,y<i), which is efficient but not very accurate. It is used to speculatively predict a sequence of likely future tokens, and then the verification model evaluates these predicted tokens in parallel to check whether they can be accepted under the verification model.",
+    "page_hit": true,
+    "top1_page_hit": true,
+    "cited_page_hit": true,
+    "keywords_ok": true,
+    "has_numeric_citation": false,
+    "answered": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is the salary of the CEO mentioned in data.pdf?",
+    "answerable": false,
+    "kind": "out-of-domain",
+    "status": "not_found",
+    "confidence": 0.0001,
+    "retrieved_pages": [
+      118,
+      117,
+      6,
+      166
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "Who won the FIFA World Cup in 2030?",
+    "answerable": false,
+    "kind": "out-of-domain",
+    "status": "not_found",
+    "confidence": 0.9863,
+    "retrieved_pages": [
+      62,
+      293,
+      305,
+      144
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is my personal phone number?",
+    "answerable": false,
+    "kind": "out-of-domain",
+    "status": "not_found",
+    "confidence": 0.0001,
+    "retrieved_pages": [
+      208,
+      8,
+      208,
+      295
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is Byte Pair Encoding (BPE) and how does it build a vocabulary?",
+    "answerable": false,
+    "kind": "in-domain, absent from book",
+    "status": "not_found",
+    "confidence": 0.0037,
+    "retrieved_pages": [
+      218,
+      214,
+      22,
+      25
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "How does FlashAttention reduce memory usage on GPUs?",
+    "answerable": false,
+    "kind": "in-domain, absent from book",
+    "status": "not_found",
+    "confidence": 0.4173,
+    "retrieved_pages": [
+      242,
+      242,
+      238,
+      218
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "How many parameters does GPT-4 have?",
+    "answerable": false,
+    "kind": "in-domain, absent from book",
+    "status": "not_found",
+    "confidence": 0.8191,
+    "retrieved_pages": [
+      50,
+      179,
+      303,
+      175
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "What is the context window size of Gemini?",
+    "answerable": false,
+    "kind": "in-domain, absent from book",
+    "status": "not_found",
+    "confidence": 0.0302,
+    "retrieved_pages": [
+      280,
+      245,
+      80,
+      296
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  },
+  {
+    "question": "Which Nvidia GPU (A100 or H100) did the authors use to train their models?",
+    "answerable": false,
+    "kind": "in-domain, absent from book",
+    "status": "not_found",
+    "confidence": 0.1716,
+    "retrieved_pages": [
+      303,
+      308,
+      36,
+      259
+    ],
+    "answer": "I could not find the answer to this question in the provided documents.",
+    "correctly_abstained": true,
+    "manual_correct": null
+  }
+]

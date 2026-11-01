@@ -1,0 +1,55 @@
+﻿
+[
+  {
+    "question": "What is pre-training in large language models?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_keywords": ["pre-training", "language"]
+  },
+  {
+    "question": "What are the two types of pre-training tasks in NLP?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_keywords": ["sequence", "generation"]
+  },
+  {
+    "question": "What is masked language modeling?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_keywords": ["language", "modeling"]
+  },
+  {
+    "question": "What is BERT used as an example to illustrate?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_keywords": ["BERT", "masked language modeling"]
+  },
+  {
+    "question": "What can large-scale pre-training help language models learn?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_keywords":["language understanding", "generation"]
+  },
+  {
+    "question": "What is the purpose of fine-tuning a pre-trained model?",
+    "answerable": true,
+    "expected_file": "data.pdf",
+    "expected_keywords":["adapt", "new task"]
+  },
+  {
+    "question": "What is the capital city of Mars?",
+    "answerable": false
+  },
+  {
+    "question": "What is the current weather on the Sun?",
+    "answerable": false
+  },
+  {
+    "question": "Who won the FIFA World Cup in 2030?",
+    "answerable": false
+  },
+  {
+    "question": "What is my personal phone number?",
+    "answerable": false
+  }
+]
